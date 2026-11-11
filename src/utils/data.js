@@ -23,6 +23,7 @@ As a curious learner and analytical thinker, I constantly explore emerging techn
 
 I'm currently looking forward to opportunities in AI/ML Engineering, Data Science, and Data Analytics where I can contribute, grow, and turn ideas into impactful solutions.`,
   availableFrom: 'Available Immediately',
+  photo: '/sushmitha-photo.jpg',
   cvLink: '/sushmitha-cv.pdf',
   resumeLink: '/sushmitha-cv.pdf',
 };

@@ -14,18 +14,26 @@ const aboutStyles = `
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
   }
   .about-photo {
-    width: 200px; height: 200px; border-radius: 50%;
-    border: 2px solid #4F7FFF; box-shadow: 0 0 35px rgba(79,127,255,0.22);
+    width: 210px; height: 210px; border-radius: 50%;
+    border: 2.5px solid #4F7FFF; box-shadow: 0 0 35px rgba(79,127,255,0.28);
     display: flex; align-items: center; justify-content: center;
-    background: #0D1230; font-family: 'Syne', sans-serif;
-    font-size: 52px; font-weight: 800; color: #4F7FFF; overflow: hidden;
+    background: #0D1230; overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .about-photo:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 45px rgba(79,127,255,0.35);
+    box-shadow: 0 0 45px rgba(79,127,255,0.45);
   }
-  .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .about-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .about-photo:hover img {
+    transform: scale(1.05);
+  }
   .about-socials { display: flex; gap: 16px; }
   .about-social-link {
     color: #6B7A99; font-size: 20px; transition: all 0.2s ease;
@@ -93,8 +101,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="about-photo">
-              {/* TODO: Replace with actual photo <img src="/photo.jpg" alt="Sushmitha Lavanuru" /> */}
-              SL
+              <img src={personalInfo.photo || "/sushmitha-photo.jpg"} alt={personalInfo.name} />
             </div>
             <div className="about-socials">
               <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="about-social-link" aria-label="GitHub">
