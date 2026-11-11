@@ -24,7 +24,7 @@ As a curious learner and analytical thinker, I constantly explore emerging techn
 I'm currently looking forward to opportunities in AI/ML Engineering, Data Science, and Data Analytics where I can contribute, grow, and turn ideas into impactful solutions.`,
   availableFrom: 'Available Immediately',
   cvLink: '/sushmitha-cv.pdf',
-  resumeLink: '/sushmitha-resume.pdf',
+  resumeLink: '/sushmitha-cv.pdf',
 };
 
 // ─── 2. Typing Lines (Hero section) ───
@@ -230,7 +230,7 @@ export const timelineEvents = [
   {
     year: '2023',
     title: 'Started B.Tech CSE · SR International Institute of Technology',
-    subtitle: 'Hyderabad — where the building began.',
+    subtitle: 'Hyderabad · CGPA: 7.75',
     icon: 'university',
     color: 'teal',
     highlight: false,
